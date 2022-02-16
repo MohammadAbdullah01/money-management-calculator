@@ -1,0 +1,37 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* common styles  */
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.default-size{
+    font-size: 18px;
+}
+.btn-style{
+    background-color: #253898;
+    color:white;
+    border: 0;
+    padding:8px 35px;
+    font-size: 1.3rem;
+    border-radius: 3px;
+}
+
+/* header styles  */
+header h1{
+    color:#5B54FA;
+}
+
+/* main starts here  */
+.calculation-part{
+    background-color: rgba(128, 128, 128, 0.123);
+    height: 100%;
+    width: 100%;
+}
+.input-field{
+    background-color: rgba(128, 128, 128, 0.301);
+    border: 0;
+    padding:5px;
+    max-width: 700px;
+}
