@@ -5,6 +5,7 @@
 *{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    box-sizing: border-box;
 }
 .default-size{
     font-size: 18px;
@@ -33,5 +34,5 @@ header h1{
     background-color: rgba(128, 128, 128, 0.301);
     border: 0;
     padding:5px;
-    max-width: 700px;
+    width: 160px;
 }
