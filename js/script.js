@@ -9,6 +9,7 @@ function getMoney(itemId) {
     let itemCost = parseFloat(item.value);
     return itemCost;
 }
+// click event on calculate button 
 document.getElementById("calculate").addEventListener("click", function () {
 
     let totalIncome = getMoney("income");
@@ -29,6 +30,22 @@ document.getElementById("calculate").addEventListener("click", function () {
         totalExpens.innerText = totalExpenses;
         finalBalance.innerText = balance;
     }
+})
+
+// click event on save button
+document.getElementById("save").addEventListener("click", function () {
+    // saving amount calculate 
+    let income = getMoney("income");
+    let percentage = getMoney("percentage");
+    let totalPercentage = (income * percentage) / 100;
+    let savingAmount = setMoney("saving-amount");
+    savingAmount.innerText = totalPercentage;
+    // remaining balance calculate 
+    let remaining = setMoney("remaining-balance")
+    let balance = parseFloat(setMoney("balance").innerText);
+    let remainingBalance = balance - parseFloat(totalPercentage);
+    remaining.innerText = remainingBalance;
+
 })
 
 
