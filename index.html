@@ -34,37 +34,39 @@
                     </div>
                     <div class="col-md-5">
                         <div class="rounded py-4 calculation-part d-flex flex-column align-items-center">
+                            <!-- income part  -->
                             <h3>Income</h3>
                             <div class="mt-2 row g-0">
                                 <span class="text-center default-size col-5">Income:</span>
                                 <span class=" col-7">
-                                    <input class="input-field" type="text">
+                                    <input id="income" class="input-field" type="text">
                                 </span>
                             </div>
+                            <!-- expenses part  -->
                             <h3 class="mt-4">Expenses</h3>
                             <div class="mt-2 row g-0">
                                 <span class="text-center default-size col-5">Food:</span>
                                 <span class=" col-7">
-                                    <input class="input-field" type="text">
+                                    <input id="food" class="input-field" type="text">
                                 </span>
                             </div>
                             <div class="mt-2 row g-0">
                                 <span class="text-center default-size col-5">Rent:</span>
                                 <span class=" col-7">
-                                    <input class="input-field" type="text">
+                                    <input id="rent" class="input-field" type="text">
                                 </span>
                             </div>
                             <div class="mt-2 row g-0">
                                 <span class="text-center default-size col-5">Clothes:</span>
                                 <span class=" col-7">
-                                    <input class="input-field" type="text">
+                                    <input id="clothes" class="input-field" type="text">
                                 </span>
                             </div>
-                            <button class="btn-style mt-4">Calculate</button>
-                            <h3 class="mt-4">Total Expenses: <span>00</span></h3>
-                            <h3 class="mt-2">Balance: <span>00</span></h3>
+                            <button id="calculate" class="btn-style mt-4">Calculate</button>
+                            <h3 class="mt-4">Total Expenses: <span id="total-expenses">00</span></h3>
+                            <h3 class="mt-2">Balance: <span id="balance">00</span></h3>
                             <div
-                                class="d-flex flex-md-row flex-column justify-content-center align-items-center saving-container mt-3">
+                                class="d-flex flex-lg-row flex-column justify-content-center align-items-center saving-container mt-3">
                                 <span class="default-size">Save:</span> <input class="input-field ms-3"
                                     type="text"><span class="mx-2 default-size">%</span>
                                 <button class="btn-style">Save</button>
@@ -77,6 +79,8 @@
             </div>
         </section>
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
